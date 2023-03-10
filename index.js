@@ -2,6 +2,7 @@ require('dotenv').load();
 
 const http = require('http');
 const path = require('path');
+const cors = require('cors')
 const express = require('express');
 const tokenGenerator = require('./src/token_generator');
 
