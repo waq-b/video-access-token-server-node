@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(request, response) {
   const identity = request.query.identity || 'identity';
   const room = request.query.room;
-  res.status(200).json({ token: tokenGenerator(identity, room) })
+  response.status(200).json({ token: tokenGenerator(identity, room) })
 });
 
 // production error handler
