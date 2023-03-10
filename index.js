@@ -8,6 +8,8 @@ const tokenGenerator = require('./src/token_generator');
 // Create Express webapp
 const app = express();
 
+app.use(cors())
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(request, response) {
