@@ -2,6 +2,7 @@ require("dotenv").load();
 
 const AccessToken = require("twilio").jwt.AccessToken;
 const VideoGrant = AccessToken.VideoGrant;
+const ChatGrant = AccessToken.ChatGrant;
 
 function tokenGenerator(identity, room) {
   // Create an access token which we will sign and return to the client,
